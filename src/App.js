@@ -1,5 +1,6 @@
-//import React from 'react';
-import React, { Component } from 'react';
+
+import React from 'react';
+//import React, { Component } from 'react';
 
 function App() {
   const value = 'World I am Mechanizd';
@@ -7,13 +8,6 @@ function App() {
 }
 
 
-
-
-class Button extends Component {
-  render() {
-    return <Button color="red" />;
-  }
-}
 
 
 export default App;
