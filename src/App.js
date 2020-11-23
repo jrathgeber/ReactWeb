@@ -2,6 +2,9 @@ import React from 'react'
 import logo from './logo.svg';
 import './App.css';
 
+import ShowAlert from './ShowAlert';
+import Button from './Button';
+
 function App() {
   return (
     <div className="App">
@@ -19,7 +22,13 @@ function App() {
           Learn React
         </a>
         <br></br>
-        <button class="Button_Launch">Launch</button>
+
+         <button class="Button_Launch">Launch me</button> 
+         
+        <Button class="Button">Shoot </Button>
+
+        <ShowAlert class="ShowAlert" />
+
       </header>
     </div>
   );
