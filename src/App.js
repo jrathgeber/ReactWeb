@@ -18,10 +18,10 @@ import Button from './Button';
 function App() {
 
 
-  const [gridApi, setGridApi] = useState(null);
-  const [gridColumnApi, setGridColumnApi] = useState(null);
+ // const [gridApi, setGridApi] = useState(null);
+ // const [gridColumnApi, setGridColumnApi] = useState(null);
 
-  const [rowData, setRowData] = useState([
+  const [rowData/*, setRowData*/] = useState([
       {make: "Toyota", model: "Celica", price: 35000},
       {make: "Ford", model: "Mondeo", price: 32000},
       {make: "Porsche", model: "Boxter", price: 72000}
