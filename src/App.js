@@ -12,6 +12,8 @@ import './App.css';
 import ShowAlert from './ShowAlert';
 import Button from './Button';
 
+import IexList from './IexList';
+
 
 //</div><div className="ag-theme-alpine" style={ { height: 400, width: 600 } }></div>
 
@@ -56,6 +58,8 @@ function App() {
           <Button class="Button">Shoot </Button>
 
           <ShowAlert class="ShowAlert" />
+
+          <IexList class="IexList" />
 
 
 
