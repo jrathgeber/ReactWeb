@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const iex = require('iexcloud_api_wrapper'); // gets auth from .env automatically
+//const iex = require('iexcloud_api_wrapper'); // gets auth from .env automatically
 
 class IexList extends Component {
 
@@ -21,7 +21,7 @@ class IexList extends Component {
 
 
   componentDidMount() {
-    this.state = {date: new Date()};
+  //  this.state = {date: new Date()};
     this.getMoverData();
   }
   
@@ -33,9 +33,9 @@ class IexList extends Component {
       //console.log(gainers);
       //this.setState ({gainers})
 
-      this.state = {date: new Date()};
+    //  this.state = {date: new Date()};
 
-      let data = await iex.list('gainers');
+      //let data = await iex.list('gainers');
 
        //let posts = res.concat;
       // this will re render the view with new data
