@@ -1,55 +1,35 @@
 import React, { Component } from 'react';
 
-//const iex = require('iexcloud_api_wrapper'); // gets auth from .env automatically
+const iex = require('iexcloud_api_wrapper'); // gets auth from .env automatically
+
+
 
 class IexList extends Component {
 
   constructor(props) {
-    super(props)
-    this.state = {
-      username: "",
-      password1: "",
-      password2: "",
-      error: ""
-    }
 
+    super()
+
+    this.state = { items: [] };
     this.state = {date: new Date()};
-
- //   this.state = {gainers: await iex.list('gainers')};
 
   }
 
 
-  componentDidMount() {
-  //  this.state = {date: new Date()};
-    this.getMoverData();
+  async componentDidMount() {
+
+    this.state.items = await this.getMoverData();
+    
   }
   
   getMoverData = async() => {
 
     try {
 
-      //const gainers = await iex.list('gainers');
-      //console.log(gainers);
-      //this.setState ({gainers})
-
-    //  this.state = {date: new Date()};
-
-      //let data = await iex.list('gainers');
-
-       //let posts = res.concat;
-      // this will re render the view with new data
-
-      //this.setState({data})
-
-      //this.setState({
-      //  Posts: posts.map((post, i) => (
-      //    <li key={i} className="list-group-item">{post.text}</li>
-      //  ))
-     // });
-
-
-
+      const gainers = await iex.list('gainers');
+      console.log(gainers);
+      this.setState({ items: gainers });
+      return { gainers };
 
     }
     catch(error) {
@@ -57,9 +37,7 @@ class IexList extends Component {
       //process.exit(-1);  // nonzero exit code indicates failure
     }
   };
-  
-//{this.state.post}
-// <textarea value={this.state.data.map(e=>JSON.stringify(e))}  defaultValue="val" />
+
 
   render() {
     return (
@@ -68,10 +46,19 @@ class IexList extends Component {
       <h1>Hello, world!</h1>
       <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
 
+      <body>
+            <h1>Today's Biggest Stock Movers</h1>
+            <h2>Gainers </h2>
+            <p>  {<h2>They are  {(toString(this.state.data))}.</h2>} </p>
+            <ul>
+
+            {this.state.items  ? this.state.items.map(item => { return <div key={item.id}>{item.title}</div>;  }) :  "Loading..."}
+
+            </ul>
+          </body>
        </div>
     );
   }
-
 }
 
   export default IexList;
