@@ -46,16 +46,16 @@ class IexList extends Component {
       <h1>Hello, world!</h1>
       <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
 
-      <body>
+
             <h1>Today's Biggest Stock Movers</h1>
             <h2>Gainers </h2>
-            <p>  {<h2>They are  {(toString(this.state.data))}.</h2>} </p>
+
             <ul>
 
             {this.state.items  ? this.state.items.map(item => { return <div key={item.id}>{item.title}</div>;  }) :  "Loading..."}
 
             </ul>
-          </body>
+
        </div>
     );
   }

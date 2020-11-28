@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <p>  {<h2>It is {(toString(this.state.data[0]))}.</h2>} </p>
+        <p>  {toString(this.state.data[0])} </p>
         <ul>
 
          

@@ -54,7 +54,6 @@ function App() {
           </a>
           <br></br>
 
-          <button class="Button_Launch">Launch me</button> 
           
           <Button class="Button">Shoot </Button>
 
