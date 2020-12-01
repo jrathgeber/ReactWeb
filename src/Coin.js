@@ -8,20 +8,20 @@ class App extends Component {
     this.state = { data: [] };
   }
 
-  async componentDidMount() {
- //   fetch(`https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest`)
- //     .then(res => res.json())
- //     .then(json => this.setState({ data: json }));
+ componentDidMount() {
+    fetch(`https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest`)
+      .then(res => res.json())
+      .then(json => this.setState({ data: json.data }));
 
-      const response = await fetch(`https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest`);
-      const json = await response.json();
-      this.setState({ data: json.data });
+ //     const response = await fetch(`https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest`);
+ //     const json = await response.json();
+ //     this.setState({ data: json.data });
 
   console.log("https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest");
 
-  console.log("Response " +   {response});
+  //console.log("Response " +   {response});
 
-  console.log("json " + json);
+  //console.log("json " + json);
 
   console.log(this.state.data);
 

@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 
+
+
+
 const iex = require('iexcloud_api_wrapper'); // gets auth from .env automatically
+
+
+const quote = async (sym) => {
+    const quoteData = await iex.quote(sym);
+    // do something with returned quote data
+    console.log(quoteData)
+};
+
+//quote("WDC");
+
 
 
 
@@ -12,17 +25,32 @@ class IexList extends Component {
 
     this.state = { items: [] };
     this.state = {date: new Date()};
+    
+    console.log("Hello !!!!!!");
+    console.log(process.env);
+    console.log('The value of PORT is:', process.env.PORT);
+    console.log(iex);
+
+    //this.quote("WDC");
 
   }
 
 
   async componentDidMount() {
 
+   
+    console.log("componentDidMount " + iex.AccountMetaData.IEXCLOUD_PUBLIC_KEY);
+
     this.state.items = await this.getMoverData();
     
+
+    quote("WDC");
+
   }
   
   getMoverData = async() => {
+
+    console.log("GET MOVER " + iex.AccountMetaData.IEXCLOUD_PUBLIC_KEY);
 
     try {
 
