@@ -13,8 +13,8 @@ import ShowAlert from './ShowAlert';
 import Button from './Button';
 
 import IexList from './IexList';
-
 import Coin from './Coin';
+import Capi from './Capi';
 
 //</div><div className="ag-theme-alpine" style={ { height: 400, width: 600 } }></div>
 
@@ -62,6 +62,8 @@ function App() {
           <IexList class="IexList" />
 
           <Coin class="Coin" />
+
+          <Capi class="Capi" />
 
 
         </header>
