@@ -1,4 +1,6 @@
-# ReactBasic
+# ReactWeb
+
+This is front end for the new Mechanizd.com
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
