@@ -9,27 +9,25 @@ class Capi extends Component {
 
  componentDidMount() {
 
+
+
+  try {
+
     fetch(`/api/message`)
       .then(res => res.json())
       .then(json => this.setState({ data: json.text }));
 
-  console.log("/api/message");
+    console.log("/api/message");
+    console.log(this.state.data);
 
-  //console.log("Response " +   {response});
-  //console.log("json " + json);
-
-  console.log(this.state.data);
-
+  }
+  catch(error) {
+    console.error(`Could not get data: ${error}`);
+    //process.exit(-1);  // nonzero exit code indicates failure
   }
 
 
- // {this.state.data.map(el => (
- //           
- //   <li>
- //     {el.name}: {el.id}
- //   </li>
- // ))}
-
+  }
 
   render() {
     return (
@@ -44,5 +42,3 @@ class Capi extends Component {
 }
 
 export default Capi;
-
-//ReactDOM.render(<App />, document.getElementById("app"));
