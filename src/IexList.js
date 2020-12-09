@@ -25,25 +25,14 @@ class IexList extends Component {
 
     this.state = { items: [] };
     this.state = {date: new Date()};
-    
-    console.log("Hello !!!!!!");
-    console.log(process.env);
-    console.log('The value of PORT is:', process.env.PORT);
-    console.log(iex);
-
-    //this.quote("WDC");
 
   }
 
 
   async componentDidMount() {
-
    
     console.log("componentDidMount " + iex.AccountMetaData.IEXCLOUD_PUBLIC_KEY);
-
     this.state.items = await this.getMoverData();
-    
-
     quote("WDC");
 
   }

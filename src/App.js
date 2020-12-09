@@ -4,7 +4,6 @@ import { AgGridColumn, AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
-
 //import React from 'react'
 import logo from './logo.svg';
 import './App.css';
@@ -12,14 +11,13 @@ import './App.css';
 import ShowAlert from './ShowAlert';
 import Button from './Button';
 
-import IexList from './IexList';
-import Coin from './Coin';
+//import IexList from './IexList';
+//import Coin from './Coin';
 import Capi from './Capi';
 
 //</div><div className="ag-theme-alpine" style={ { height: 400, width: 600 } }></div>
 
 function App() {
-
 
  // const [gridApi, setGridApi] = useState(null);
  // const [gridColumnApi, setGridColumnApi] = useState(null);
@@ -58,10 +56,6 @@ function App() {
           <Button class="Button">Shoot </Button>
 
           <ShowAlert class="ShowAlert" />
-
-          <IexList class="IexList" />
-
-          <Coin class="Coin" />
 
           <Capi class="Capi" />
 

@@ -9,7 +9,10 @@ class App extends Component {
   }
 
  componentDidMount() {
-    fetch(`https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest`)
+    fetch(`/api/message`)
+//    fetch(`https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest`)
+
+
       .then(res => res.json())
       .then(json => this.setState({ data: json.data }));
 
