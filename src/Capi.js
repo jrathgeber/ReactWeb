@@ -13,11 +13,12 @@ class Capi extends Component {
 
   try {
 
-    fetch(`/api/message`)
-      .then(res => res.json())
-      .then(json => this.setState({ data: json.text }));
+    const x = fetch(`/api/message`)
+      .then(res => res.text())
+      .then(dataStr => this.setState({ data: dataStr }));
 
     console.log("/api/message");
+    console.log(x);
     console.log(this.state.data);
 
   }
