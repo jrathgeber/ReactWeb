@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://red-bay-041ec780f.azurestaticapps.net/",
+  "proxy": "https://red-bay-041ec780f.azurestaticapps.net/api",
   "eslintConfig": {
     "extends": "react-app"
   },
