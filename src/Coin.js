@@ -28,7 +28,11 @@ class App extends Component {
 
   console.log(this.state.data);
 
-  }
+
+
+}
+
+
 
 
  // {this.state.data.map(el => (

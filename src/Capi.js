@@ -17,7 +17,17 @@ class Capi extends Component {
       .then(res => res.text())
       .then(dataStr => this.setState({ data: dataStr }));
 
+
+    const response = fetch(`/api/todos`, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({task: this.state.data})
+        });
+
+        //this.setState({ data: response.data })
+
     console.log("/api/message");
+    console.log(response);
     console.log(x);
     console.log(this.state.data);
 
