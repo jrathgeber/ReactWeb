@@ -9,7 +9,7 @@ import Button from './Button';
 
 //import IexList from './IexList';
 //import Coin from './Coin';
-import Capi from './Capi';
+//import Capi from './Capi';
 import Grid from './Grid';
 
 //</div><div className="ag-theme-alpine" style={ { height: 400, width: 600 } }></div>
