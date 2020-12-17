@@ -21,7 +21,8 @@ class Grid extends Component {
           headerName: 'Name',
           field: 'companyName',
           sortable: true,
-          filter: true
+          filter: true,
+          type: 'textColumn'
         },
         {
           headerName: 'Price',
@@ -31,7 +32,7 @@ class Grid extends Component {
         },
         {
           headerName: 'Source:',
-          field: 'latestSource:',
+          field: 'latestSource',
           sortable: true,
           filter: true
         }
