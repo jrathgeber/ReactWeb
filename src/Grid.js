@@ -18,20 +18,20 @@ class Grid extends Component {
           checkboxSelection: true
         },
         {
-          headerName: 'Name:',
+          headerName: 'Name',
           field: 'companyName',
           sortable: true,
           filter: true
         },
         {
-          headerName: 'Open',
-          field: 'open',
+          headerName: 'Price',
+          field: 'latestPrice',
           sortable: true,
           filter: true
         },
         {
-          headerName: 'Close',
-          field: 'close',
+          headerName: 'Source:',
+          field: 'latestSource:',
           sortable: true,
           filter: true
         }
