@@ -31,6 +31,18 @@ class Grid extends Component {
           filter: true
         },
         {
+        headerName: 'Change',
+        field: 'change',
+        sortable: true,
+        filter: true
+        },    
+        {
+          headerName: 'Change%',
+          field: 'changePercent',
+          sortable: true,
+          filter: true
+          },        
+        {
           headerName: 'Source:',
           field: 'latestSource',
           sortable: true,
@@ -88,7 +100,7 @@ class Grid extends Component {
         className="ag-theme-balham"
         style={{
           height: '500px',
-          width: '800px'
+          width: '1200px'
         }}
       >
         <button type="button" onClick={this.onButtonClick}>
