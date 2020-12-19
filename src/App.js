@@ -27,15 +27,15 @@ function App() {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Mechanizd will be based on React!
+            Mechanizd will be based on React! 
           </p>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://www.mechanizd.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Algorithm Performance
           </a>
           <br></br>
 

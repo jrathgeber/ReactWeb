@@ -10,7 +10,7 @@ class Button extends Component {
   }
   render() {
     return (
-      <button onClick={this.shoot}>Take the shot man !</button>
+      <button onClick={this.shoot}>Crypto Currencies</button>
     );
   }
 }

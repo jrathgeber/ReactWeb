@@ -7,7 +7,7 @@ class ShowAlert extends Component {
   }
 
   render() {
-    return <button onClick={this.showAlert}>show alert</button>;
+    return <button onClick={this.showAlert}>Stocks</button>;
   }
 }
 export default ShowAlert;
