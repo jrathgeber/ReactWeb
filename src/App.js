@@ -7,54 +7,54 @@ import './App.css';
 import ShowAlert from './ShowAlert';
 import Button from './Button';
 
-//import IexList from './IexList';
-//import Coin from './Coin';
-//import Capi from './Capi';
 import Grid from './Grid';
+import ReactGA from 'react-ga';
 
-//</div><div className="ag-theme-alpine" style={ { height: 400, width: 600 } }></div>
+
+function initializeReactGA() {
+  ReactGA.initialize('UA-83288571-6');
+  ReactGA.pageview('/homepage');
+}
+
 
 function App() {
 
+  initializeReactGA()
 
   return (
 
+      <div id="parent">
 
-<div id="parent">
+          <div className="App">
 
-    <div className="App">
+              <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                <p>
+                  Mechanizd was developed by :  
+                </p>
+                <a
+                  className="App-link"
+                  href="https://www.jasonrathgeber.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Jason Rathgeber
+                </a>
+                <br></br>
+                
+                <Button class="Button">Shoot </Button>
 
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Mechanizd was developed by :  
-          </p>
-          <a
-            className="App-link"
-            href="https://www.jasonrathgeber.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Jason Rathgeber
-          </a>
-          <br></br>
+                <ShowAlert class="ShowAlert" />
+      
+                <br></br>
 
-          
-          <Button class="Button">Shoot </Button>
+                <Grid class="Grid" />
 
-          <ShowAlert class="ShowAlert" />
- 
-          <br></br>
+                <br></br>
 
-          <Grid class="Grid" />
-
-          <br></br>
-
-        </header>
+              </header>
+            </div>
       </div>
-
-</div>
-
   );
 }
 
