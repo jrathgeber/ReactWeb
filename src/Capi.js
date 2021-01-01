@@ -9,10 +9,6 @@ class Capi extends Component {
   }
 
 
-
-
-
-
  componentDidMount() {
 
     try {

@@ -1,6 +1,5 @@
 import React from 'react';
 
-//import React from 'react'
 import logo from './logo.svg';
 import './App.css';
 
@@ -9,6 +8,8 @@ import Button from './Button';
 
 import Grid from './Grid';
 import ReactGA from 'react-ga';
+
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 
 function initializeReactGA() {
@@ -20,6 +21,8 @@ function initializeReactGA() {
 function App() {
 
   initializeReactGA()
+
+  console.log(process.env);
 
   return (
 
@@ -42,8 +45,13 @@ function App() {
                 </a>
                 <br></br>
                 
-                <Button class="Button">Shoot </Button>
 
+                Subscribe
+                <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
+
+                <br></br>
+
+                <Button class="Button">Shoot </Button>
                 <ShowAlert class="ShowAlert" />
       
                 <br></br>
@@ -51,6 +59,8 @@ function App() {
                 <Grid class="Grid" />
 
                 <br></br>
+
+
 
               </header>
             </div>
