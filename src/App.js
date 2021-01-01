@@ -47,7 +47,7 @@ function App() {
                 
 
                 Subscribe
-                <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
+                <MailchimpSubscribe url={"https://jasonrathgeber.us14.list-manage.com/subscribe/post?u=43728505a592a711ca92e6fbf&amp;id=8f2ce5c3b0"} />
 
                 <br></br>
 
