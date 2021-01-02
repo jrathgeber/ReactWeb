@@ -61,6 +61,16 @@ function App() {
                 <br></br>
 
 
+                <a
+                  className="App-link"
+                  href="https://www.jasonrathgeber.com/vcard/output/Index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Algo Trading
+                </a>
+
+
 
               </header>
             </div>
