@@ -67,7 +67,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Algo Trading
+                  Algo Trading History
                 </a>
 
 
