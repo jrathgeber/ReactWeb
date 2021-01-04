@@ -6,7 +6,7 @@ import './Button.css'; // Tell webpack that Button.js uses these styles
 
 class Button extends Component {
   shoot() {
-    alert("Great Shot!"); 
+    alert("Comming soon!"); 
   }
   render() {
     return (

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 class ShowAlert extends Component {
   showAlert() {
-    alert("I'm an alert");
+    alert("See below");
   }
 
   render() {
