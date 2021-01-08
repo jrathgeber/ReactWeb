@@ -1,8 +1,10 @@
 # ReactWeb
 
-This is front end for the new Mechanizd.com
+This project contains the source code to generate http://www.Mechanizd.com
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Full user guide will follow as I build this out. 
 
 ## Available Scripts
 
