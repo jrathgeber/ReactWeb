@@ -70,11 +70,11 @@ function App() {
 
                 <a
                   className="App-link"
-                  href="https://www.jasonrathgeber.com/vcard/output/Index.html"
+                  href="https://iextrading.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Algo Trading History
+                  Thank you IEX !
                 </a>
 
 
