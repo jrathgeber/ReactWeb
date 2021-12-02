@@ -1,5 +1,11 @@
 {
     "staticWebApps.appSubpath": "/",
     "staticWebApps.apiSubpath": "/",
-    "staticWebApps.appArtifactSubpath": "build"
+    "staticWebApps.appArtifactSubpath": "build",
+    "azureFunctions.deploySubpath": "api",
+    "azureFunctions.postDeployTask": "npm install (functions)",
+    "azureFunctions.projectLanguage": "JavaScript",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "npm prune (functions)"
 }

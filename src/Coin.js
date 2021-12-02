@@ -23,7 +23,6 @@ class App extends Component {
   console.log("https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest");
 
   //console.log("Response " +   {response});
-
   //console.log("json " + json);
 
   console.log(this.state.data);
