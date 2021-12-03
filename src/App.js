@@ -74,7 +74,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Thank you IEX !
+                  Thank you IEX ! Do you do Crypto ?
                 </a>
 
 
