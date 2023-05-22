@@ -41,7 +41,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Jason P. Rathgeber
+                  Jason P. Rathgeber and Matteo Too !
                 </a>
                 <br></br>
                 
