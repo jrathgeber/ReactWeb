@@ -31,7 +31,7 @@ function App() {
           <div className="App">
 
               <header className="App-header">
-                <img src={logo} /* className="App-logo" */ alt="logo" />
+                <img src={logo} className="App-logo" alt="logo" />
                 <p>
                   Mechanizd was developed by :  
                 </p>
@@ -41,7 +41,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Jason P. Rathgeber and Matteo Too !
+                  Jason P. Rathgeber
                 </a>
                 <br></br>
                 
@@ -56,17 +56,14 @@ function App() {
       
                 <br></br>
 
-                 {/* <Grid class="Grid"></Grid> */}
+                 <Grid class="Grid"></Grid> 
 
                  <p>
                   -
-                </p>
-
+                 </p>
 
                 <br></br>
                 <br></br>
-
-
 
                 <a
                   className="App-link"
@@ -76,7 +73,6 @@ function App() {
                 >
                   Thank you IEX ! Do you do Crypto ?
                 </a>
-
 
 
               </header>
