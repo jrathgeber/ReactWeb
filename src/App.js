@@ -31,7 +31,7 @@ function App() {
           <div className="App">
 
               <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
+                <img src={logo} /* className="App-logo" */ alt="logo" />
                 <p>
                   Mechanizd was developed by :  
                 </p>
@@ -56,9 +56,9 @@ function App() {
       
                 <br></br>
 
-                <Grid class="Grid" />
+                 {/* <Grid class="Grid"></Grid> */}
 
-                <p>
+                 <p>
                   -
                 </p>
 
