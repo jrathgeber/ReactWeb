@@ -33,7 +33,7 @@ function App() {
               <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
-                  Mechanizd was developed by :  
+                  This app is being developed by :  
                 </p>
                 <a
                   className="App-link"
@@ -71,7 +71,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Thank you IEX ! Do you do Crypto ?
+                  Market Data by IEX
                 </a>
 
 
